@@ -31,69 +31,66 @@
         о них, а также о посещенных вами достопримечательностях</p>
       </div>
       
-      <div class="form">
-        <div class="form-list">
-          <h2 class="form__title">Представьтесь</h2>
-          <form class="form__items" action="#" method="post">
-            <label class="form__item" for="name">Имя</label>
-            <input type="text" name="name" id="name" placeholder="Петр">
-            <label class="form__item" for="sername">Фамилия</label>
-            <input type="text" name="sername" id="sername" placeholder="Иванов">
-            <label class="form__item" for="forname">Отчество</label>
-            <input type="text" name="forname" id="forname" placeholder="Александрович">
-          </form>
-        </div>
+      <form class="form" action="#" method="post">
+        <fieldset class="form__list">
+          <legend class="form__title">Представьтесь</legend>
+          
+          <label class="form__item" for="name">Имя</label>
+          <input type="text" name="name" id="name" placeholder="Петр">
+          
+          <label class="form__item" for="sername">Фамилия</label>
+          <input type="text" name="sername" id="sername" placeholder="Иванов">
+          
+          <label class="form__item" for="forname">Отчество</label>
+          <input type="text" name="forname" id="forname" placeholder="Александрович">
+        </fieldset>
         
-        <div class="form-list">
-          <h2 class="form__title">Контактная информация</h2> 
-          <form class="form__items" action="#" method="post">
-            <label class="form__item" for="phone">Контактный телефон:</label>
-            <input type="tel" name="tel" id="phone" placeholder="Введите телефон">
-            <p class="form__error">Ошибка, перепроверьте номер</p>
-            <label class="form__item" for="email">Электронная почта:</label>
-            <input type="email" name="email" id="email" placeholder="Введите e-mail">
-          </form>
-        </div>
+        <fieldset class="form__list">
+          <legend class="form__title">Контактная информация</legend>
+          
+          <label class="form__item" for="phone">Контактный телефон:</label>
+          <input type="tel" name="tel" id="phone" placeholder="Введите телефон">
+          <p class="form__error">Ошибка, перепроверьте номер</p>
+          
+          <label class="form__item" for="email">Электронная почта:</label>
+          <input type="email" name="email" id="email" placeholder="Введите e-mail">
+        </fieldset>
         
-        <div class="form-list">
-          <h2 class="form__title">Ваше общее впечатление</h2>  
-          <form class="form__items" action="#" method="post">
-            <input type="radio" name="impression" id="plus">
-            <label class="form__choice" for="plus" checked>Скорее положительное</label>
+        <fieldset class="form__list">
+          <legend class="form__title">Ваше общее впечатление</legend>  
+          
+          <input type="radio" name="impression" id="plus" checked>
+          <label class="form__choice" for="plus">Скорее положительное</label>
             
-            <input type="radio" name="impression" id="minus">
-            <label class="form__choice" for="minus">Скорее отрицательное</label>
+          <input type="radio" name="impression" id="minus">
+          <label class="form__choice" for="minus">Скорее отрицательное</label>
             
-            <input type="radio" name="impression" id="hard">
-            <label class="form__choice" for="hard">Затрудняюсь ответить</label>
-          </form>
-        </div>
+          <input type="radio" name="impression" id="hard">
+          <label class="form__choice" for="hard">Затрудняюсь ответить</label>
+        </fieldset>
         
-        <div class="form-list">
-          <h2 class="form__title">Посещенные достопримечательности</h2>  
-          <form class="form__items" action="#" method="post">
-            <input type="checkbox" name="most-devil" id="devil">
-            <label class="form-choice" for="devil">Мост Дьявола</label>
+        <fieldset class="form__list">
+          <legend class="form__title">Посещенные достопримечательности</legend>  
+          
+          <input type="checkbox" name="most-devil" id="devil" checked>
+          <label class="form-choice" for="devil">Мост Дьявола</label>
             
-            <input type="checkbox" name="slide-park" id="park">
-            <label class="form-choice" for="park">Слайд-парк</label>
+          <input type="checkbox" name="slide-park" id="park" checked>
+          <label class="form-choice" for="park">Слайд-парк</label>
             
-            <input type="checkbox" name="mountain-bell" id="bell">
-            <label class="form-choice" for="bell">Гора-Колокол</label>
+          <input type="checkbox" name="mountain-bell" id="bell">
+          <label class="form-choice" for="bell">Гора-Колокол</label>
             
-            <input type="checkbox" name="red-crag" id="crag">
-            <label class="form-choice" for="crag">Красные скалы</label>
-          </form>
-        </div>
+          <input type="checkbox" name="red-crag" id="crag" checked>
+          <label class="form-choice" for="crag">Красные скалы</label>
+        </fieldset>
         
-        <div class="form-list">
-          <h2 class="form__title">Опишите свои эмоции</h2> 
-          <form class="form__items" action="#" method="post">
-            <textarea class="form__item-text" name="emotions">Опишите подробно все свои восторги</textarea>
-            <button class="btn" type="submit">Отправить отзыв</button>
-          </form>
-        </div>
-      </div>
+        <fieldset class="form__list">
+          <legend class="form__title">Опишите свои эмоции</legend>
+          <textarea class="form__item-text" name="emotions">Опишите подробно все свои восторги</textarea>
+          <button class="btn" type="submit">Отправить отзыв</button>
+        </fieldset>
+      </form>
     </main>
     
     <footer class="main-footer">
