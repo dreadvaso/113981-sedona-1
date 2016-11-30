@@ -5,8 +5,107 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle-close" type="button">Закрыть</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <div class="main-nav__open-menu">
+          <button class="main-nav__toggle-open" type="submit">Открыть меню</button>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="intro">
+      <div class="intro__img-sedona">
+        <img src="http://placehold.it/320x393" alt="Sedona">
+      </div>
+      <h2 class="intro__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="intro__descr">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+    </div>
+    
+    <section class="features">
+      <div class="features__intro">
+        <h2 class="features__title">Настоящий городок</h2>
+        <span class="features__number">№1</span>
+        <p class="features__descr">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+      
+      <div class="features__list">
+        <div class="features__img-sedona">
+          <img src="http://placehold.it/320x260" alt="Sedona">  
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Жильё</b>
+          <p class="featires__item-descr">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Сувениры</b>
+          <p class="featires__item-descr">Не только китайского, но и местного производства</p>
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Еда</b>
+          <p class="featires__item-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+      </div>
+      
+      <div class="features__intro">
+        <h2 class="features__title">Тест на мост дьявола</h2>
+        <span class="features__number">№2</span>
+        <p class="features__descr">Да, по нему можно пройтись если вы осмелитесь, конечно</p>
+      </div>
+      
+      <div class="features__list  features__list--items">
+        <div class="features__img-sedona">
+          <img src="http://placehold.it/320x260" alt="Sedona">  
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Небольшая площадь</b>
+          <span class="features__item-number">№3</span>
+          <p class="featires__item-descr">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Красивая дорога</b>
+          <span class="features__item-number">№4</span>
+          <p class="featires__item-descr">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        </div>
+        <div class="features__item">
+          <b class="features__item-title">Мало туристов</b>
+          <span class="features__item-number">№5</span>
+          <p class="featires__item-descr">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="offer-services">
+      <h2 class="offer-services__title">Заинтересовались?</h2>
+      <p class="offer-services__descr">Укажите предполагаемые даты поездки и мы покажем Вам лучшие
+      предложения гостиниц в Седоне</p>
+      <form class="offer-services__search" action="#" method="post">
+        <button class="btn" type="submit">Найти гостиницу</button>
+      </form>
+      
+      <div class="map">
+        <img src="http://placehold.it/320x346" alt="Карта">  
+      </div>
+    </section>
+    
+    <footer class="main-footer">
+      <h2 class="main-footer__tag">#VestiSedona</h2>
+      
+      <div class="social">
+        <a class="social__btn social__btn--vk" href="">Twitter</a> 
+        <a class="social__btn social__btn--fb" href="">Facebook</a>
+        <a class="social__btn social__btn--youtube" href="">Youtube</a>
+      </div>
+      
+      <div class="copyright copyright--htmlacademy">
+        <a class="copyright__item" href="">Разработано</a>
+      </div>
+    </footer>
   </body>
 </html>

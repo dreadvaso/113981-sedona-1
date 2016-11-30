@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона, Форма</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle-close" type="button">Закрыть</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        </ul>
+        <div class="main-nav__open-menu">
+          <button class="main-nav__toggle-open" type="submit">Открыть меню</button>
+        </div>
+      </nav>
+    </header> 
+    
+    <main class="main-content">
+      <div class="main-content__img-sedona">
+        <img src="http://placehold.it/320x60" alt="Sedona">
+      </div>
+      
+      <div class="main-content__intro">
+        <h2 class="main-content__intro-title">Оставьте свой отзыв</h2>
+        <p class="main-content__intro-descr">Помогите нашим отелям стать лучше! Оставьте отзыв
+        о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      
+      <div class="form">
+        <div class="form-list">
+          <h2 class="form__title">Представьтесь</h2>
+          <form class="form__items" action="#" method="post">
+            <label class="form__item" for="name">Имя</label>
+            <input type="text" name="name" id="name" placeholder="Петр">
+            <label class="form__item" for="sername">Фамилия</label>
+            <input type="text" name="sername" id="sername" placeholder="Иванов">
+            <label class="form__item" for="forname">Отчество</label>
+            <input type="text" name="forname" id="forname" placeholder="Александрович">
+          </form>
+        </div>
+        
+        <div class="form-list">
+          <h2 class="form__title">Контактная информация</h2> 
+          <form class="form__items" action="#" method="post">
+            <label class="form__item" for="phone">Контактный телефон:</label>
+            <input type="tel" name="tel" id="phone" placeholder="Введите телефон">
+            <p class="form__error">Ошибка, перепроверьте номер</p>
+            <label class="form__item" for="email">Электронная почта:</label>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail">
+          </form>
+        </div>
+        
+        <div class="form-list">
+          <h2 class="form__title">Ваше общее впечатление</h2>  
+          <form class="form__items" action="#" method="post">
+            <input type="radio" name="impression" id="plus">
+            <label class="form__choice" for="plus" checked>Скорее положительное</label>
+            
+            <input type="radio" name="impression" id="minus">
+            <label class="form__choice" for="minus">Скорее отрицательное</label>
+            
+            <input type="radio" name="impression" id="hard">
+            <label class="form__choice" for="hard">Затрудняюсь ответить</label>
+          </form>
+        </div>
+        
+        <div class="form-list">
+          <h2 class="form__title">Посещенные достопримечательности</h2>  
+          <form class="form__items" action="#" method="post">
+            <input type="checkbox" name="most-devil" id="devil">
+            <label class="form-choice" for="devil">Мост Дьявола</label>
+            
+            <input type="checkbox" name="slide-park" id="park">
+            <label class="form-choice" for="park">Слайд-парк</label>
+            
+            <input type="checkbox" name="mountain-bell" id="bell">
+            <label class="form-choice" for="bell">Гора-Колокол</label>
+            
+            <input type="checkbox" name="red-crag" id="crag">
+            <label class="form-choice" for="crag">Красные скалы</label>
+          </form>
+        </div>
+        
+        <div class="form-list">
+          <h2 class="form__title">Опишите свои эмоции</h2> 
+          <form class="form__items" action="#" method="post">
+            <textarea class="form__item-text" name="emotions">Опишите подробно все свои восторги</textarea>
+            <button class="btn" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="main-footer">
+      <h2 class="main-footer__tag">#VestiSedona</h2>
+      
+      <div class="social">
+        <a class="social__btn social__btn--vk" href="">Twitter</a> 
+        <a class="social__btn social__btn--fb" href="">Facebook</a>
+        <a class="social__btn social__btn--youtube" href="">Youtube</a>
+      </div>
+      
+      <div class="copyright copyright--htmlacademy">
+        <a class="copyright__item" href="">Разработано</a>
+      </div>
+    </footer>
+    
+    <div class="modal-window">
+      <h2 class="modal-window__title">Что-то пошло не так</h2>
+      <p class="modal-window__descr">Проверьте поля, выделенные красным, скорее всего вы
+      забыли их запомнить</p>
+      <button class="btn" type="button">Ок</button>
+    </div>
+    
+    <div class="modal-window">
+      <h2 class="modal-window__title">Ваш отзыв отправлен</h2>
+      <p class="modal-window__descr">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте</p>
+      <button class="btn" type="button">Закрыть окно</button>
+    </div>
+  </body>
+</html>

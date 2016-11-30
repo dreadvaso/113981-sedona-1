@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Савелий Касперских](https://up.htmlacademy.ru/adaptive/9/user/113981).
-* Наставник: [Вадим Белкин](https://htmlacademy.ru/profile/id233737)..
+* Наставник: [Вадим Белкин](https://htmlacademy.ru/profile/id233737).
 
 ---
 
